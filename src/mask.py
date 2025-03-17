@@ -1,4 +1,4 @@
-def get_mask_card_number(card_number: str):
+def get_mask_card_number(card_number: str) -> str:
     a = card_number[:4]
     b = card_number[4:6]
     c = card_number[-4:]
@@ -6,7 +6,7 @@ def get_mask_card_number(card_number: str):
     full_card_number = a + ' ' + b + '** **** ' + c
     return full_card_number
 
-def get_mask_account(account_number: str):
+def get_mask_account(account_number: str) -> str:
     piece = account_number[-4:]
     '''Функция возвращает значение при помощи f-строки'''
     return f'** {piece}'
